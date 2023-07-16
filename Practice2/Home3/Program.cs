@@ -5,6 +5,10 @@ if((num==6)||(num==7))
 {
 Console.WriteLine("Это выходной день");
 }
+else if((num==0)||(num>7))
+{
+Console.WriteLine("Нет такого дня недели");
+}
 else
 {
 Console.WriteLine("Это рабочий день");
