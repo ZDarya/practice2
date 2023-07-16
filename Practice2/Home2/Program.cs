@@ -8,7 +8,6 @@ int GetThirdRank(int num)
     num /= 10;
 }
 return num % 10;}
-Console.WriteLine(GetThirdRank(num));
 
 if (num < 100)
 {
@@ -18,4 +17,8 @@ else if ((num>=100) && (num<1000))
 {
     int result = num%10;
     Console.WriteLine(result);
+}
+else if (num > 999)
+{
+    Console.WriteLine(GetThirdRank(num));
 }
